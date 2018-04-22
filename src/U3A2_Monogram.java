@@ -126,92 +126,19 @@ public class U3A2_Monogram extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void generateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generateButtonActionPerformed
-        //String measureStr = "012345678901234567890";
-//String myString = "Video Games Are Fun!";
-//String myString2, myString3, str1, str2, str3;
-//
-//
-//System.out.println(measureStr);
-//
-//System.out.println(myString + "\n");
-//
-//
-////The character at position 5 is
-//
-//System.out.println(myString.charAt(5) + "\n");
-//
-////The ASCII code in decimal for character at position 5 is
-//
-//System.out.println(myString.codePointAt(5) + "\n");
-//
-//// Search starting at position 0 for the word "fun"
-//
-//System.out.println(myString.indexOf("Fun",0)+ "\n");
-//
-//// Two characters starting at position 12 are
-//
-//System.out.println(myString.substring(12,14)+ "\n");
-//
-//// Replace the word "Fun!" with "challenging");
-//
-//myString=(myString.replace("Fun","Challenging"));
-//
-//System.out.println(myString + "\n");
-//
-//
-//// There are two ways to concatenate (join) strings
-//
-//// Method 1: Join the words "and fun! " to the original
-//
-//// string using the concat method
-//
-//myString2 = "and Fun!";
-//
-//myString3 = myString.concat(" " + myString2);
-//
-//System.out.println(myString3 + "\n");
-//
-//
-//// Method 2: Join 2 strings using the + operator
-//
-//str1 = "Challenging ";
-//
-//str2 = "and Fun";
-//
-//str3 = str1 + str2;
-//
-//System.out.println(str3 + "\n");
-//
-//
-////Convert a string to upper case letters
-//
-//System.out.println(myString3.toUpperCase() + "\n" );
-//
-////Find the length of a string
-//
-//System.out.println(myString3.length());
-
-
-        String first;
-        String second;
-        String last;
-        String monogram;
-        String first2;
-        String second2;
-        String last2;
+           String monogram;
+    String monogram2;
+    String monogram3;
+    String first;
+    String second;
+    String last;
         first = firstName.getText();
-        System.out.print(first);
         second = middleName.getText();
-        System.out.print(second);
         last = lastName.getText();
-        System.out.println(last);
-        System.out.print(first.charAt(0));
-        System.out.print(second.charAt(0));
-        System.out.print(last.charAt(0));
-        System.out.println(first.toLowerCase());
-//        monogram = ;
-//        monogramName.setText("Your Monogram Name Is: " + monogram);
-//        
+        monogram = first.toLowerCase().substring(0,1);
+        monogram2 = second.toUpperCase().substring(0,1);
+        monogram3 = last.toLowerCase().substring(0,1);
+        monogramName.setText("Your Monogram Name Is: " + monogram + monogram2 + monogram3);    
         
     }//GEN-LAST:event_generateButtonActionPerformed
 
